@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "testmod",
+	"version": "${version}",
+	"name": "TestMod",
+	"description": "Test mod by Spaceiii, only for trolling",
+	"authors": [
+		"Spaceiii"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/testmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"fr.spaceiii.testmod.TestMod"
+		],
+        "client": [
+            "fr.spaceiii.testmod.TestModClient"
+        ],
+		"fabric-datagen": [
+			"fr.spaceiii.testmod.TestModDataGenerator"
+		]
+	},
+	"mixins": [
+		"testmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
