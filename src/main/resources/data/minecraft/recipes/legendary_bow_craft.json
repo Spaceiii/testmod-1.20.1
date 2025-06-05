@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "pattern": [
+    "FGF",
+    "NEN",
+    "FBF"
+  ],
+  "key": {
+    "F": {
+      "item": "testmod:star_fragment"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "B": {
+      "item": "minecraft:bow"
+    },
+    "E": {
+      "item": "testmod:stellar_essence"
+    },
+    "N": {
+      "item": "minecraft:netherite_block"
+    }
+  },
+  "result": {
+    "item": "testmod:legendary_bow"
+  }
+}
