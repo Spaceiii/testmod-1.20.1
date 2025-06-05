@@ -56,11 +56,9 @@ public class LegendaryBow extends BowItem {
                             arrowEntity.setOnFireFor(100);
                         }
 
-                        if (bl || playerEntity.getAbilities().creativeMode) {
+                        if (bl2 || playerEntity.getAbilities().creativeMode) {
                             arrowEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                         }
-
-                        stack.damage(1, playerEntity, p -> p.sendToolBreakStatus(playerEntity.getActiveHand()));
 
                         world.spawnEntity(arrowEntity);
                     }

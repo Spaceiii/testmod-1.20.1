@@ -9,7 +9,7 @@ import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.world.World;
 
 public class LegendaryArrowEntity extends ArrowEntity {
-    private World world;
+    private final World world;
 
     public LegendaryArrowEntity(EntityType<? extends ArrowEntity> type, World world) {
         super(type, world);
